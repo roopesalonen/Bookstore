@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+	<div>
 	<h1>Booklist</h1>
 	<table>
 		<thead>
@@ -23,8 +24,12 @@
 				<td th:text="${book.isbn}"></td>
 				<td th:text="${book.publicationYear}"></td>
 				<td th:text="${book.price} + €"></td>
+				<td><a th:href="@{/delete/{id}(id=${book.id})}">Delete</a></td>
+				<td><a th:href="@{/edit/{id}(id=${book.id})}">Edit</a></td>
 			</tr>
 		</tbody>
 	</table>
+		<a href="/add" class="btn btn-primary">Add book</a>
+	</div>
 </body>
 </html>
