@@ -30,8 +30,8 @@ public class BookstoreApplication {
 			repository.save(new Book("Nalle Puh","Pekka Puu","324634",2022,24.90,crepository.findByName("Lasten").get(0)));
 			repository.save(new Book("Automerkit","Jaska Jaa","654321",2002,32.99,crepository.findByName("Auto").get(0)));
 			
-			urepository.save(new AppUser("user", "$2a$06$3jYRJrg0ghaaypjZ/.g4SethoeA51ph3UD4kZi9oPkeMTpjKU5uo6","admin@admin.fi", "USER"));
-			urepository.save(new AppUser("admin", "$2a$08$bCCcGjB03eulCWt3CY0AZew2rVzXFyouUolL5dkL/pBgFkUH9O4J2", "user@user.fi", "ADMIN"));
+			urepository.save(new AppUser("user", "$2a$06$3jYRJrg0ghaaypjZ/.g4SethoeA51ph3UD4kZi9oPkeMTpjKU5uo6","user@user.fi", "user"));
+			urepository.save(new AppUser("admin", "$2a$08$bCCcGjB03eulCWt3CY0AZew2rVzXFyouUolL5dkL/pBgFkUH9O4J2", "admin@admin.fi", "admin"));
 		};
 	}
 }
